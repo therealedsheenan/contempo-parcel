@@ -9,6 +9,7 @@ import App from './App';
 // main scss file
 import './styles/main.scss';
 
+const $root = document.getElementById('root');
 
 if (process.env.NODE_ENV === 'production') {
   // production setup
@@ -16,7 +17,7 @@ if (process.env.NODE_ENV === 'production') {
     <BrowserRouter>
       <App />
     </BrowserRouter>,
-    document.getElementById('root')
+    $root
   );
 }
 
@@ -28,7 +29,7 @@ const render = Component => {
         <Component />
       </BrowserRouter>
     </AppContainer>,
-    document.getElementById('root')
+    $root
   );
 };
 
