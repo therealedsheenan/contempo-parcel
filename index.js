@@ -4,13 +4,11 @@ import ReactDOM from 'react-dom';
 // main scss file
 import './styles/main.scss';
 
-const App = () => {
-  return (
-    <div className="App">
-      <h1 className="App-Title">Hello Contempo-parcel</h1>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <h1 className="App-Title">Hello Contempo-parcel</h1>
+  </div>
+);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
