@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./index.js","dynamic":true}],"generated":{"html":"<html>\n<head>\n<title>Contempo-parcel</title>\n</head>\n<body>\n<h1>Hello contempo-parcel</h1>\n  <script src=\"/dist/contempo-parcel.js\"></script>\n</body>\n</html>\n"},"hash":"15c63963f05a6c3e385aeec3d545b02c"}
