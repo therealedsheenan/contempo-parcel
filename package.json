@@ -1,0 +1,9 @@
+{
+  "name": "contempo-parcel",
+  "version": "1.0.0",
+  "description": "Contempo using parcel",
+  "main": "index.js",
+  "repository": "https://github.com/therealedsheenan/contempo-parcel.git",
+  "author": "Sheenan Tenepre <sheenantenepre@gmail.com>",
+  "license": "MIT"
+}
