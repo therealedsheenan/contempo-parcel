@@ -6,18 +6,7 @@ import Loadable from 'react-loadable';
 
 // react containers
 import Navigation from '../components/Navigation';
-
-const LoadingComponent = (props: { isLoading: boolean, timedOut: boolean, error: boolean }) => {
-  if (props.isLoading) {
-    // While our other component is loading...
-    return props.timedOut ? <div>loader timed out!</div> : <div>loading...</div>;
-  }
-  if (props.error) {
-    // If something went wrong
-    return <div>Something went wrong...</div>;
-  }
-  return null;
-};
+import LoadingComponent from '../components/Loading';
 
 const AsyncStyleGuide = Loadable({
   loader: () => import('../containers/Styleguide'),
