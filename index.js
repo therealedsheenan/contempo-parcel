@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 // components
 import App from './App';
 
-// main scss file
+// main SASS file
 import './src/styles/main.scss';
 
 const $root = document.getElementById('root');
