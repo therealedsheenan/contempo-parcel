@@ -2,7 +2,7 @@ import React from 'react';
 
 const StyleguideContainer = () => (
   <div className="Styleguide">
-    <p>this is the styleguide</p>
+    <h1>this is the styleguide</h1>
   </div>
 );
 
