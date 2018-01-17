@@ -1,34 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { AppContainer } from 'react-hot-loader';
 
 // components
 import App from './App';
 
 // main scss file
-import './styles/main.scss';
+import './src/styles/main.scss';
 
 const $root = document.getElementById('root');
-
-if (process.env.NODE_ENV === 'production') {
-  // production setup
-  ReactDOM.render(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>,
-    $root
-  );
-}
 
 // development setup with HMR
 const render = Component => {
   ReactDOM.render(
-    <AppContainer>
-      <BrowserRouter>
-        <Component />
-      </BrowserRouter>
-    </AppContainer>,
+    <BrowserRouter>
+      <Component />
+    </BrowserRouter>,
     $root
   );
 };
@@ -38,7 +25,13 @@ render(App);
 
 // Hot Module Replacement API
 if (module.hot) {
-  module.hot.accept('./App', () => {
+  module.hot.dispose(function () {
+    // module is about to be replaced
+    render(App);
+  });
+
+  module.hot.accept(function () {
+    // module or one of its dependencies was just updated
     render(App);
   });
 }
