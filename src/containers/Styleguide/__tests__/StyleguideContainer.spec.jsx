@@ -3,7 +3,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import StyleguideContainer from '../StyleguideContainer';
+import StyleguideContainer from '../index';
 
 test('Home existence', () => {
   const component = renderer.create(<StyleguideContainer />).toJSON();

@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 
-import HomeContainer from '../HomeContainer';
+import HomeContainer from '../index';
 import store from '../../../config/store';
 
 test('Home existence', () => {

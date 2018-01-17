@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
 // react containers
-import Navigation from '../components/Navigation/NavigationComponent';
+import Navigation from '../components/Navigation';
 
 const LoadingComponent = (props: { isLoading: boolean, timedOut: boolean, error: boolean }) => {
   if (props.isLoading) {
@@ -20,12 +20,12 @@ const LoadingComponent = (props: { isLoading: boolean, timedOut: boolean, error:
 };
 
 const AsyncStyleGuide = Loadable({
-  loader: () => import('../containers/Styleguide/StyleguideContainer'),
+  loader: () => import('../containers/Styleguide'),
   loading: props => <LoadingComponent {...props} />
 });
 
 const AsyncHome = Loadable({
-  loader: () => import('../containers/Home/HomeContainer'),
+  loader: () => import('../containers/Home'),
   loading: props => <LoadingComponent {...props} />
 });
 

@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 // components
-import NavigationComponent from '../NavigationComponent';
+import NavigationComponent from '../index';
 
 test('Navigation existence', () => {
   const component = renderer
