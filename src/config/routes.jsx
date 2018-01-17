@@ -5,7 +5,6 @@ import { Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
 // react containers
-import Root from '../components/Root/index';
 import Navigation from '../components/Navigation/NavigationComponent';
 
 const LoadingComponent = (props: { isLoading: boolean, timedOut: boolean, error: boolean }) => {
@@ -31,10 +30,10 @@ const AsyncHome = Loadable({
 });
 
 const routes = () =>
-  <Root>
+  <main>
     <Route path="/" component={Navigation} />
     <Route exact path="/style" component={AsyncStyleGuide} />
     <Route exact path="/" component={AsyncHome} />
-  </Root>;
+  </main>;
 
 export default routes;
