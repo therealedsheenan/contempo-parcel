@@ -9,9 +9,11 @@
   "scripts": {
     "start": "NODE_ENV=development parcel index.html",
     "watch": "parcel watch index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "flow": "node_modules/.bin/flow"
   },
   "devDependencies": {
+    "flow-bin": "^0.63.1",
     "node-sass": "^4.7.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
