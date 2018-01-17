@@ -29,11 +29,12 @@ const AsyncHome = Loadable({
   loading: props => <LoadingComponent {...props} />
 });
 
-const routes = () =>
+const routes = () => (
   <main>
     <Route path="/" component={Navigation} />
     <Route exact path="/style" component={AsyncStyleGuide} />
     <Route exact path="/" component={AsyncHome} />
-  </main>;
+  </main>
+);
 
 export default routes;
