@@ -7,9 +7,7 @@ import store from './src/config/store';
 
 export default () => (
   <Provider store={store}>
-    <div className="App">
-      {routes()}
-    </div>
+    {routes()}
   </Provider>
 );
 
