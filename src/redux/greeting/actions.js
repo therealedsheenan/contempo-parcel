@@ -28,7 +28,6 @@ const getGreetingSuccess = (payload: Object) => {
 
   if (hr >= 18 && hr <= 24) {
     greeting = payload.data.greeting[2];
-  }
 
   return {
     type: type.GET_GREETING_SUCCESS,
