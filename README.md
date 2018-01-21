@@ -1,6 +1,9 @@
 # contempo-parcel
 Contempo using parcel
 
+See demo here: [contempo-parcel.surge.sh](http://contempo-parcel.surge.sh)
+
+
 ## Installation
 Clone the repository then:
 
